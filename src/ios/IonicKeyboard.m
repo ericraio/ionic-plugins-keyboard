@@ -16,7 +16,7 @@
     //set defaults
     self.hideKeyboardAccessoryBar = NO;
     self.disableScroll = NO;
-    self.styleDark = NO;
+    self.styleDark = YES;
     
     _keyboardShowObserver = [nc addObserverForName:UIKeyboardWillShowNotification
                                object:nil
