@@ -6,7 +6,7 @@
 
 @synthesize hideKeyboardAccessoryBar = _hideKeyboardAccessoryBar;
 @synthesize disableScroll = _disableScroll;
-//@synthesize styleDark = _styleDark;
+@synthesize styleDark = _styleDark;
 
 - (void)pluginInitialize {
   
@@ -81,7 +81,6 @@
     _hideKeyboardAccessoryBar = hideKeyboardAccessoryBar;
 }
 
-/*
 - (BOOL)styleDark {
     return _styleDark;
 }
@@ -99,7 +98,6 @@
 
     _styleDark = styleDark;
 }
-*/
 
 
 /* ------------------------------------------------------------- */
@@ -145,7 +143,6 @@
     NSLog(@"Showing keyboard not supported in iOS due to platform limitations.");
 }
 
-/*
 - (void) styleDark:(CDVInvokedUrlCommand*)command {
     if (!command.arguments || ![command.arguments count]){
       return;
@@ -154,7 +151,6 @@
     
     self.styleDark = [value boolValue];
 }
-*/
 
 @end
 
